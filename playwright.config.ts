@@ -43,8 +43,8 @@ export default defineConfig({
     // Collect trace on first retry (great for debugging)
     trace: 'on-first-retry',
 
-    // Browser headless mode (true in CI, false locally for visibility)
-    headless: false,
+    // Automatically headless on CI, headed locally!
+    headless: !!process.env.CI,
   },
 
   projects: [
