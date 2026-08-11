@@ -1,0 +1,34 @@
+{
+  "validTodos": [
+    {
+      "input": "Buy groceries",
+      "description": "normal text"
+    },
+    {
+      "input": "Buy milk & eggs!",
+      "description": "special chracters"
+    },
+    {
+      "input": "2+2=4 is math",
+      "description": "mathematical expression as string"
+    },
+    {
+      "input":"@#$%^&*()_",
+      "description":"only special chracters"
+    },
+    {
+      "input": "This is a very long todo item that contains more than one hundred characters just to test how the application handles long text input without any character limit",
+      "description": "Very Long text"
+    }
+  ],
+  "invalidTodos": [
+    {
+      "input": "",
+      "description": "empty string"
+    },
+    {
+      "input": "   ",
+      "description": "only whitespace"
+    }
+  ]
+}
