@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:ci": "playwright test --reporter=list,html,junit",
     "test:smoke": "playwright test --grep @smoke",
     "test:regression": "playwright test --grep @regression",
     "test:api": "playwright test --grep @api",
     "test:headed": "playwright test --headed",
-    "test:ui": "playwright test tests/e2e",
     "report:html": "playwright show-report",
     "report:allure": "allure serve allure-results"
   },
